@@ -342,3 +342,113 @@ ul:last-child {
 .afterTest h1{
     margin-bottom: 30px;
 }
+
+
+
+
+@media screen and (max-width:768px) {
+    #nav
+    {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    #nav ul
+    {
+        flex-direction: column;
+        
+    }
+
+    #nav ul>li{
+        margin-top: 10px;
+    }
+
+    .homepage
+    {
+        flex-direction: column;
+    }
+
+    .popup
+    {
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .popup>.popup-body{
+        height: 400px;
+        width: 500px;
+    }
+
+    .container>h1
+    {
+        font-weight: 500px;
+        font-size: 30px;
+    }
+
+    .badges
+    {
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .yellow-badge{
+       margin-top: 5px;
+    }
+
+    .brown-badge
+    {
+        margin-top: 7px;
+    }
+
+    /* .badge1,.badge15,.badge12,.badge4,.badge5,.badge6,.badge7,.badge13,.badge14
+    {
+        display: none;           
+    } */
+
+    #startQuiz
+    {
+        right: 100px;
+    }
+
+    .popup .close{
+        right: 90px;
+        top: 45px;
+    }
+
+    .que
+    {
+        flex-direction: column;
+    }
+
+    .options
+    {
+        flex-direction: column;
+    }
+
+    .question{
+        margin-top: 200px;
+        font-size: 20px;
+    }
+
+    .opt
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card{
+        font-size: 20px;
+    }
+
+    .buttons{
+        position: relative;
+        bottom: 0;
+        margin-top: 10px;
+    }
+
+    
+}
