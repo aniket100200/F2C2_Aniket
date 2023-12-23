@@ -38,12 +38,12 @@ login.addEventListener('click',()=>{
 let totalScore=0;
 
 let first=false;
-function check(x,a1) 
+function check(x,a1,y) 
 {
     if(first)return;
     first=true;
    let card=document.querySelectorAll(".card");    
-   card[x-1].style.backgroundColor="#FCC822";
+   card[y-1].style.backgroundColor="#FCC822";
     if(x==a1)
     {
         let score=document.querySelector(".score");
@@ -137,9 +137,13 @@ let scoreAfterTest=document.getElementById("afterTest");
 submit.addEventListener('click',()=>
 {
    afterTest.style.display="flex";
-
     scoreAfterTest.innerText="YOU SCORE IS: "+totalScore;
     totalScore=0;
+
+    let cln=".que"+currQ;
+    let nqd=document.querySelector(cln);
+
+    nqd.style.display="none";
     questions.style.display="none";
 });
 
@@ -176,6 +180,9 @@ startQuiz.addEventListener('click',()=>
     homepage.style.display="none";
     questions.style.display="flex";
     popup.style.display="none";
+
+    let ele=document.querySelector(".que1");
+    ele.style.display="flex";
 });
 
 
