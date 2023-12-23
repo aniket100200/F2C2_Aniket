@@ -146,11 +146,12 @@ ul:last-child {
     align-items: center;
     margin-inline: 30px;
     padding-inline: 7px;
+    border: none;
 }
 
-.brown-badge:hover{
+/* .brown-badge:hover{
     border:2px solid rgb(47, 47, 128);
-}
+} */
 
 
 .yellow-badge
@@ -163,6 +164,7 @@ ul:last-child {
     align-items: center;
     margin-inline: 30px;
     padding-left: 7px;
+    border: none;
    
 }
 
@@ -183,9 +185,9 @@ ul:last-child {
     border: 1px solid red;
 }
 
-.yellow-badge:hover{
+/* .yellow-badge:hover{
     border: 2px solid rgb(90, 79, 32);
-}
+} */
 
 
 .container>h1

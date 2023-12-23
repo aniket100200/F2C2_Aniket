@@ -144,12 +144,35 @@ submit.addEventListener('click',()=>
 });
 
 
+
 let startQuiz=document.getElementById("startQuiz");
 
+let badges=0;
+function badge(badgeNo)
+{
+   
+    let id=".badge"+badgeNo;
+    let si=document.querySelector(id);
+    function toggle() {
+        if(si.style.border!="2px solid black"){
+            si.style.border="2px solid black";
+            ++badges;
+            return;
+        }
+        si.style.border="none";
+       if(badges>0)--badges;
+    }
+    toggle();
+}
 
 
 startQuiz.addEventListener('click',()=>
 {
+    if(badges<5)
+    {
+        alert("You have selected Only: "+badges);
+        return;
+    }
     homepage.style.display="none";
     questions.style.display="flex";
     popup.style.display="none";
@@ -174,6 +197,10 @@ function about() {
 function feature(){
     alert("You Can Give the Mock on this platform!");
 }
+
+
+
+
 
 
 
